@@ -155,6 +155,9 @@
   /* team-section design end */
 
   /* features section design start */
+  #features {
+    margin-bottom: 130px;
+  }
   .features-container {
     gap: 9.13rem;
   }
@@ -201,6 +204,43 @@
     line-height:  2.50rem;
   }
 
+  /* facts design start */
+
+  .facts-text-content {
+    width: 33.88rem;
+  }
+
+  .facts-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 7.75rem;
+  }
+
+  .facts-card {
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-1 {
+    text-align: center;
+    
+  }
+
+  .card-title {
+    font-size: 2.82rem;
+    font-weight: 600;
+    color: rgba(66, 66, 66, 1);
+  }
+  .card-desc {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+ 
+
 
 
 
@@ -226,13 +266,27 @@
       .team-grid {
         grid-template-columns: repeat(1, 1fr);
       }
-      .teams-container, .features-container  {
+      .teams-container, 
+      .features-container,
+      #facts  {
         padding: 0 10px;
       }
       .badge-btn {
         margin-top: 10px;
         margin-left: 5px;
       }
+
+      /* facts  */
+      .facts-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+      }
+      .facts-text-content {
+        width: 100%;
+      }
+
+      
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -250,6 +304,21 @@
         margin-top: 30px;
       }
 
+      .teams-container, 
+      .features-container,
+      #facts  {
+        padding: 0 10px;
+      }
+
+      .facts-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+      .badge-btn {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -260,5 +329,16 @@
 
       .teams-container {
         max-width: 850px;
+      }
+
+      .teams-container, 
+      .features-container,
+      #facts  {
+        padding: 0 10px;
+      }
+
+      .facts-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
       }
 }
