@@ -28,6 +28,12 @@
   .third-color {
     color: rgba(255, 144, 14, 1);
   }
+  .fouth-color {
+    color: rgba(255, 255, 255, 1);
+  }
+  .bg-third-color {
+    background-color: rgba(255, 144, 14, 1);
+  }
 
 
   .display-flex {
@@ -124,10 +130,6 @@
     font-weight: 500;
   }
 
-  .px-l-10 {
-    padding-left: 10px;
-  }
-
   .teams-container {
     max-width: 900px;
     margin: 85px auto 100px;
@@ -150,10 +152,55 @@
   .teams-container {
     gap: 4.56rem;
   }
-
-
-
   /* team-section design end */
+
+  /* features section design start */
+  .features-container {
+    gap: 9.13rem;
+  }
+
+  .features-img-content img {
+    width: 100%;
+  }
+  .b-p-8 {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 20px;
+  }
+
+  .features-box {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    border-radius: 8px;
+    
+  }
+
+  .secondary-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .text-trans {
+    text-transform: capitalize;
+  }
+
+  .my-b-20 {
+    margin-bottom: 10px;
+  }
+
+  .badge-btn {
+    padding: 45px 42px;
+    border: 0;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: -77px;
+    margin-left: -92px;
+  }
+
+  .experience {
+    font-size: 1.56rem;
+    line-height:  2.50rem;
+  }
+
 
 
 
@@ -178,6 +225,9 @@
       /* team responsive */
       .team-grid {
         grid-template-columns: repeat(1, 1fr);
+      }
+      .teams-container, .features-container  {
+        padding: 0 10px;
       }
 }
 
