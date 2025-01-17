@@ -25,6 +25,10 @@
   .secondary-color {
     color: rgba(114, 114, 114, 1);
   }
+  .third-color {
+    color: rgba(255, 144, 14, 1);
+  }
+
 
   .display-flex {
     display: flex;
@@ -114,6 +118,43 @@
     width: 100%;
   }
 
+  /* team-section design start */
+  .team-tite {
+    font-size: 2.81rem;
+    font-weight: 500;
+  }
+
+  .px-l-10 {
+    padding-left: 10px;
+  }
+
+  .teams-container {
+    max-width: 900px;
+    margin: 85px auto 100px;
+  }
+
+  .team-member-img img {
+    width: 100%;
+  }
+
+  .team-text-content {
+    align-items: center;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .teams-container {
+    gap: 4.56rem;
+  }
+
+
+
+  /* team-section design end */
+
 
 
 
@@ -133,6 +174,10 @@
       }
       .nav-menu {
         margin-top: 30px;
+      }
+      /* team responsive */
+      .team-grid {
+        grid-template-columns: repeat(1, 1fr);
       }
 }
 
@@ -157,5 +202,9 @@
     .nav-bar {
         max-width: 800px;
         margin: 0 auto;
+      }
+
+      .teams-container {
+        max-width: 850px;
       }
 }
