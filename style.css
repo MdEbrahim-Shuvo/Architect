@@ -229,6 +229,10 @@
       .teams-container, .features-container  {
         padding: 0 10px;
       }
+      .badge-btn {
+        margin-top: 10px;
+        margin-left: 5px;
+      }
 }
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
